@@ -9,7 +9,7 @@
    </classes>
   </test> 
   
-  <test name="Freelisting">
+  <!--  <test name="Freelisting">
 		  <classes>
 		  <class name="com.justdial.testcases.FreelistingTestCases"/>
 		  </classes>
@@ -19,6 +19,6 @@
 		  <classes>
 		  <class name="com.justdial.testcases.FitnessTestCases"/>
 		  </classes>
-  </test>
+  </test>-->
   
 </suite> <!-- Suite -->

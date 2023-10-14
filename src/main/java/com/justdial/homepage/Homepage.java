@@ -35,7 +35,7 @@ public class Homepage {
 			InputStream in = new FileInputStream(path + "\\src\\test\\resources\\ObjectRepository\\config.properties");
 			prop.load(in);
 		} catch (Exception e) {
-
+           System.out.println(e);
 		}
 	}
 
