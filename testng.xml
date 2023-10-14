@@ -20,5 +20,6 @@
 		  <class name="com.justdial.testcases.FitnessTestCases"/>
 		  </classes>
   </test>
+  <!-- testing -->
   
 </suite> <!-- Suite -->
