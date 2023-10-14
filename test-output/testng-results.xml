@@ -1,82 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="0" failed="0" skipped="20">
+<testng-results ignored="0" total="10" passed="0" failed="5" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-01T03:16:58Z" name="Suite" finished-at="2021-06-01T03:17:01Z" duration-ms="2869">
+  <suite started-at="2023-10-14T08:13:43Z" name="Suite" finished-at="2023-10-14T08:15:52Z" duration-ms="129074">
     <groups>
     </groups>
-    <test started-at="2021-06-01T03:16:58Z" name="Homepage" finished-at="2021-06-01T03:17:00Z" duration-ms="1254">
+    <test started-at="2023-10-14T08:13:43Z" name="Homepage" finished-at="2023-10-14T08:15:52Z" duration-ms="129074">
       <class name="com.justdial.testcases.HomepageTestCases">
-        <test-method is-config="true" signature="Browser()[pri:0, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:16:58Z" name="Browser" finished-at="2021-06-01T03:16:59Z" duration-ms="1177" status="FAIL">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+        <test-method is-config="true" signature="Browser()[pri:0, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:13:43Z" name="Browser" finished-at="2023-10-14T08:13:51Z" duration-ms="8422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browser -->
-        <test-method signature="websiteTest()[pri:1, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="websiteTest" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method signature="websiteTest()[pri:1, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:13:51Z" name="websiteTest" finished-at="2023-10-14T08:13:51Z" duration-ms="19" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
+              <![CDATA[expected [Justdial - Local Search, Social, News, Videos, Shopping] but found [Find Businesses Near You on Local Search Engine - Justdial]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
+              <![CDATA[java.lang.AssertionError: expected [Justdial - Local Search, Social, News, Videos, Shopping] but found [Find Businesses Near You on Local Search Engine - Justdial]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.justdial.testcases.HomepageTestCases.websiteTest(HomepageTestCases.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -89,37 +47,59 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- websiteTest -->
-        <test-method signature="elementsTest()[pri:2, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="elementsTest" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method signature="elementsTest()[pri:2, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:13:51Z" name="elementsTest" finished-at="2023-10-14T08:14:21Z" duration-ms="30103" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="city"]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[@id="city"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="city"]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[@id="city"]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.justdial.testcases.HomepageTestCases.elementsTest(HomepageTestCases.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -132,37 +112,59 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- elementsTest -->
-        <test-method signature="loginPageTest()[pri:3, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="loginPageTest" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method signature="loginPageTest()[pri:3, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:14:21Z" name="loginPageTest" finished-at="2023-10-14T08:14:51Z" duration-ms="30015" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#h_login"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=id, value=h_login}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#h_login"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=id, value=h_login}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.justdial.testcases.HomepageTestCases.loginPageTest(HomepageTestCases.java:57)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -175,37 +177,59 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method signature="locationTest()[pri:4, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="locationTest" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method signature="locationTest()[pri:4, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:14:51Z" name="locationTest" finished-at="2023-10-14T08:15:22Z" duration-ms="30066" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="city"]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[@id="city"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="city"]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[@id="city"]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.justdial.testcases.HomepageTestCases.locationTest(HomepageTestCases.java:69)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -218,11 +242,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locationTest -->
-        <test-method signature="searchingTest()[pri:5, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="searchingTest" finished-at="2021-06-01T03:17:00Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.locationTest" duration-ms="0" status="SKIP">
+        <test-method signature="searchingTest()[pri:5, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="searchingTest" finished-at="2023-10-14T08:15:22Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.locationTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HomepageTestCases.searchingTest()[pri:5, instance:com.justdial.testcases.HomepageTestCases@71c3b41] depends on not successfully finished methods]]>
@@ -248,7 +272,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchingTest -->
-        <test-method signature="resultPageTest()[pri:6, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="resultPageTest" finished-at="2021-06-01T03:17:00Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.searchingTest" duration-ms="0" status="SKIP">
+        <test-method signature="resultPageTest()[pri:6, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="resultPageTest" finished-at="2023-10-14T08:15:22Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.searchingTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HomepageTestCases.resultPageTest()[pri:6, instance:com.justdial.testcases.HomepageTestCases@71c3b41] depends on not successfully finished methods]]>
@@ -274,7 +298,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resultPageTest -->
-        <test-method signature="bestdealsTest()[pri:7, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="bestdealsTest" finished-at="2021-06-01T03:17:00Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.resultPageTest" duration-ms="0" status="SKIP">
+        <test-method signature="bestdealsTest()[pri:7, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="bestdealsTest" finished-at="2023-10-14T08:15:22Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.resultPageTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HomepageTestCases.bestdealsTest()[pri:7, instance:com.justdial.testcases.HomepageTestCases@71c3b41] depends on not successfully finished methods]]>
@@ -300,7 +324,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bestdealsTest -->
-        <test-method signature="ratingCheck()[pri:8, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="ratingCheck" finished-at="2021-06-01T03:17:00Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.bestdealsTest" duration-ms="0" status="SKIP">
+        <test-method signature="ratingCheck()[pri:8, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="ratingCheck" finished-at="2023-10-14T08:15:22Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.bestdealsTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HomepageTestCases.ratingCheck()[pri:8, instance:com.justdial.testcases.HomepageTestCases@71c3b41] depends on not successfully finished methods]]>
@@ -326,7 +350,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ratingCheck -->
-        <test-method signature="printData()[pri:9, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="printData" finished-at="2021-06-01T03:17:00Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.ratingCheck" duration-ms="0" status="SKIP">
+        <test-method signature="printData()[pri:9, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="printData" finished-at="2023-10-14T08:15:22Z" depends-on-methods="com.justdial.testcases.HomepageTestCases.ratingCheck" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HomepageTestCases.printData()[pri:9, instance:com.justdial.testcases.HomepageTestCases@71c3b41] depends on not successfully finished methods]]>
@@ -352,33 +376,55 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printData -->
-        <test-method signature="dataFromMenubar()[pri:10, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="dataFromMenubar" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method signature="dataFromMenubar()[pri:10, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:22Z" name="dataFromMenubar" finished-at="2023-10-14T08:15:52Z" duration-ms="30056" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class,'jdtext')]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[contains(@class,'jdtext')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.HomepageTestCases.Browser(HomepageTestCases.java:23)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class,'jdtext')]"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VCLKQSN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b61f5847402537a7c3d4d56c97c4809e
+*** Element info: {Using=xpath, value=//*[contains(@class,'jdtext')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.justdial.testcases.HomepageTestCases.dataFromMenubar(HomepageTestCases.java:191)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -391,547 +437,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataFromMenubar -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2021-06-01T03:17:00Z" name="terminate" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.justdial.testcases.HomepageTestCases@71c3b41]" started-at="2023-10-14T08:15:52Z" name="terminate" finished-at="2023-10-14T08:15:52Z" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- com.justdial.testcases.HomepageTestCases -->
     </test> <!-- Homepage -->
-    <test started-at="2021-06-01T03:17:00Z" name="Freelisting" finished-at="2021-06-01T03:17:01Z" duration-ms="1351">
-      <class name="com.justdial.testcases.FreelistingTestCases">
-        <test-method is-config="true" signature="browser()[pri:0, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:00Z" name="browser" finished-at="2021-06-01T03:17:00Z" duration-ms="203" status="FAIL">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="launch()[pri:1, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:00Z" name="launch" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="allNullValues()[pri:2, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:00Z" name="allNullValues" finished-at="2021-06-01T03:17:00Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allNullValues -->
-        <test-method signature="companyNullValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:01Z" name="companyNullValue" data-provider="testData" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- companyNullValue -->
-        <test-method signature="mobileNullValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:01Z" name="mobileNullValue" data-provider="testData" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mobileNullValue -->
-        <test-method signature="cityNullvalue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:01Z" name="cityNullvalue" data-provider="testData" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cityNullvalue -->
-        <test-method signature="validDataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:01Z" name="validDataTest" data-provider="testData" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FreelistingTestCases.browser(FreelistingTestCases.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validDataTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.justdial.testcases.FreelistingTestCases@51f116b8]" started-at="2021-06-01T03:17:01Z" name="terminate" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminate -->
-      </class> <!-- com.justdial.testcases.FreelistingTestCases -->
-    </test> <!-- Freelisting -->
-    <test started-at="2021-06-01T03:17:01Z" name="Fitness" finished-at="2021-06-01T03:17:01Z" duration-ms="186">
-      <class name="com.justdial.testcases.FitnessTestCases">
-        <test-method is-config="true" signature="browser()[pri:0, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="browser" finished-at="2021-06-01T03:17:01Z" duration-ms="168" status="FAIL">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FitnessTestCases.browser(FitnessTestCases.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="fitness()[pri:1, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="fitness" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FitnessTestCases.browser(FitnessTestCases.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fitness -->
-        <test-method signature="fitnessMenu()[pri:2, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="fitnessMenu" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FitnessTestCases.browser(FitnessTestCases.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fitnessMenu -->
-        <test-method signature="gym()[pri:3, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="gym" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FitnessTestCases.browser(FitnessTestCases.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gym -->
-        <test-method signature="gymMenu()[pri:4, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="gymMenu" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
-at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
-at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
-at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
-at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
-at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at com.justdial.homepage.Homepage.setup(Homepage.java:49)
-at com.justdial.testcases.FitnessTestCases.browser(FitnessTestCases.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gymMenu -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.justdial.testcases.FitnessTestCases@7671cb68]" started-at="2021-06-01T03:17:01Z" name="terminate" finished-at="2021-06-01T03:17:01Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminate -->
-      </class> <!-- com.justdial.testcases.FitnessTestCases -->
-    </test> <!-- Fitness -->
   </suite> <!-- Suite -->
 </testng-results>
